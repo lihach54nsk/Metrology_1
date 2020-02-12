@@ -56,7 +56,11 @@ namespace Metrology_1
             result[4] = dispT;
             result[5] = errorT;
 
-            return result;
+            if (GetN(0.1, result[1], 0.1) < exNumber) return result;
+            else return result;
         }
+
+        static double GetN(double kvantil, double dispersion, double epsilon)
+            => (kvantil * kvantil * dispersion / (epsilon * epsilon)) + 1;
     }
 }
