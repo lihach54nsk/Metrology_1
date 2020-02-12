@@ -33,7 +33,7 @@ namespace Metrology_1
             dataGridView1.Rows[5].Cells[0].Value = "Dp";
             dataGridView1.Rows[6].Cells[0].Value = "Погрешность р";
 
-            var result = Simulation.Sim(1, 15, Convert.ToInt32(ExpCount_TextBox.Text));
+            var result = Simulation.Sim(1, 15, Convert.ToDouble(ExpCount_TextBox.Text));
             outputTextBox.Text = result[0].ToString();
             dataGridView1.Rows[1].Cells[1].Value = result[0].ToString();
             dataGridView1.Rows[2].Cells[1].Value = result[1].ToString();
@@ -42,7 +42,7 @@ namespace Metrology_1
             dataGridView1.Rows[5].Cells[1].Value = result[4].ToString();
             dataGridView1.Rows[6].Cells[1].Value = result[5].ToString();
 
-            result = Simulation.Sim(12, 20, Convert.ToInt32(ExpCount_TextBox.Text));
+            result = Simulation.Sim(12, 20, Convert.ToDouble(ExpCount_TextBox.Text));
             dataGridView1.Rows[1].Cells[2].Value = result[0].ToString();
             dataGridView1.Rows[2].Cells[2].Value = result[1].ToString();
             dataGridView1.Rows[3].Cells[2].Value = result[2].ToString();
@@ -50,7 +50,7 @@ namespace Metrology_1
             dataGridView1.Rows[5].Cells[2].Value = result[4].ToString();
             dataGridView1.Rows[6].Cells[2].Value = result[5].ToString();
 
-            result = Simulation.Sim(25, 39, Convert.ToInt32(ExpCount_TextBox.Text));
+            result = Simulation.Sim(25, 39, Convert.ToDouble(ExpCount_TextBox.Text));
             dataGridView1.Rows[1].Cells[3].Value = result[0].ToString();
             dataGridView1.Rows[2].Cells[3].Value = result[1].ToString();
             dataGridView1.Rows[3].Cells[3].Value = result[2].ToString();
@@ -58,7 +58,7 @@ namespace Metrology_1
             dataGridView1.Rows[5].Cells[3].Value = result[4].ToString();
             dataGridView1.Rows[6].Cells[3].Value = result[5].ToString();
 
-            result = Simulation.Sim(28, 100, Convert.ToInt32(ExpCount_TextBox.Text));
+            result = Simulation.Sim(28, 100, Convert.ToDouble(ExpCount_TextBox.Text));
             dataGridView1.Rows[1].Cells[4].Value = result[0].ToString();
             dataGridView1.Rows[2].Cells[4].Value = result[1].ToString();
             dataGridView1.Rows[3].Cells[4].Value = result[2].ToString();
@@ -68,7 +68,7 @@ namespace Metrology_1
 
             result = Simulation.Sim(Convert.ToInt32(OperandCount_TextBox.Text),
                 Convert.ToInt32(OperatorCount_TextBox.Text),
-                Convert.ToInt32(ExpCount_TextBox.Text));
+                Convert.ToDouble(ExpCount_TextBox.Text));
             dataGridView1.Rows[1].Cells[5].Value = result[0].ToString();
             dataGridView1.Rows[2].Cells[5].Value = result[1].ToString();
             dataGridView1.Rows[3].Cells[5].Value = result[2].ToString();
