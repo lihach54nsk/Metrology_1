@@ -36,11 +36,13 @@
             this.OperatorCount_Label = new System.Windows.Forms.Label();
             this.OperatorCount_TextBox = new System.Windows.Forms.TextBox();
             this.outputTextBox = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // start
             // 
-            this.start.Location = new System.Drawing.Point(15, 168);
+            this.start.Location = new System.Drawing.Point(12, 250);
             this.start.Name = "start";
             this.start.Size = new System.Drawing.Size(162, 52);
             this.start.TabIndex = 0;
@@ -54,6 +56,7 @@
             this.ExpCount_TextBox.Name = "ExpCount_TextBox";
             this.ExpCount_TextBox.Size = new System.Drawing.Size(100, 20);
             this.ExpCount_TextBox.TabIndex = 1;
+            this.ExpCount_TextBox.Text = "1000";
             // 
             // ExpCount_Label
             // 
@@ -81,6 +84,7 @@
             this.OperandCount_TextBox.Name = "OperandCount_TextBox";
             this.OperandCount_TextBox.Size = new System.Drawing.Size(100, 20);
             this.OperandCount_TextBox.TabIndex = 4;
+            this.OperandCount_TextBox.Text = "50";
             // 
             // OperatorCount_Label
             // 
@@ -98,6 +102,7 @@
             this.OperatorCount_TextBox.Name = "OperatorCount_TextBox";
             this.OperatorCount_TextBox.Size = new System.Drawing.Size(100, 20);
             this.OperatorCount_TextBox.TabIndex = 6;
+            this.OperatorCount_TextBox.Text = "1";
             // 
             // outputTextBox
             // 
@@ -106,11 +111,20 @@
             this.outputTextBox.Size = new System.Drawing.Size(100, 20);
             this.outputTextBox.TabIndex = 7;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(298, 8);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(712, 294);
+            this.dataGridView1.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(308, 232);
+            this.ClientSize = new System.Drawing.Size(1022, 314);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.outputTextBox);
             this.Controls.Add(this.OperatorCount_TextBox);
             this.Controls.Add(this.OperatorCount_Label);
@@ -121,6 +135,7 @@
             this.Controls.Add(this.start);
             this.Name = "Form1";
             this.Text = "Оценка качества ПО по Хослтеду";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,6 +151,7 @@
         private System.Windows.Forms.Label OperatorCount_Label;
         private System.Windows.Forms.TextBox OperatorCount_TextBox;
         private System.Windows.Forms.TextBox outputTextBox;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
