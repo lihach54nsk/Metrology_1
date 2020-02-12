@@ -48,10 +48,10 @@ namespace Metrology_1
                 sumQ2 += q2 * q2;
             }
             double mathT = 0.9 * (n1 + n2) * Math.Log(n1 + n2, 2);
-            double dispT = Math.PI * Math.PI * (n1 + n2) * (n1 + n2) / 6.0;
+            double dispT = (Math.PI * Math.PI * (n1 + n2) * (n1 + n2)) / 6.0;
             double errorT = 1 / (2 * Math.Log(n1 + n2, 2));
             result[0] = (double)countSymbols / exNumber;
-            result[1] = (sumQ2 - result[0]) / (exNumber * (n1 + n2 - 1));
+            result[1] = (sumQ2 - (countSymbols * countSymbols) / exNumber) / (exNumber - 1);
             result[2] = Math.Sqrt(result[1]) / result[0];
             result[3] = mathT;
             result[4] = dispT;
