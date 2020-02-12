@@ -16,7 +16,7 @@ namespace Metrology_1
             double[] result = new double[6];
             double sumQ2 = 0;
             Random random = new Random();
-            int countSymbols = 0;
+            double countSymbols = 0.0;
 
             bool[] mas = new bool[n1 + n2];
 
@@ -47,7 +47,7 @@ namespace Metrology_1
                 sumQ2 += q2 * q2;
             }
             double mathT = 0.9 * (n1 + n2) * Math.Log(n1 + n2, 2);
-            double dispT = Math.PI * Math.PI * (n1 + n2) * (n1 + n2) / 6;
+            double dispT = Math.PI * Math.PI * (n1 + n2) * (n1 + n2) / 6.0;
             double errorT = 1 / (2 * Math.Log(n1 + n2, 2));
             result[0] = (double)countSymbols / exNumber;
             result[1] = (sumQ2 - result[0]) / (exNumber * (n1 + n2 - 1));
