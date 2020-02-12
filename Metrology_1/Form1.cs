@@ -19,7 +19,7 @@ namespace Metrology_1
 
         private void start_Click(object sender, EventArgs e)
         {
-            dataGridView1.RowCount = 7;
+            dataGridView1.RowCount = 8;
             dataGridView1.ColumnCount = 6;
             dataGridView1.Columns[1].Name = "n=16";
             dataGridView1.Columns[2].Name = "n=32";
@@ -32,6 +32,7 @@ namespace Metrology_1
             dataGridView1.Rows[4].Cells[0].Value = "Lp";
             dataGridView1.Rows[5].Cells[0].Value = "Dp";
             dataGridView1.Rows[6].Cells[0].Value = "Погрешность р";
+            dataGridView1.Rows[7].Cells[0].Value = "N";
 
             var result = Simulation.Sim(1, 15, Convert.ToDouble(ExpCount_TextBox.Text));
             outputTextBox.Text = result[0].ToString();
@@ -41,6 +42,7 @@ namespace Metrology_1
             dataGridView1.Rows[4].Cells[1].Value = result[3].ToString();
             dataGridView1.Rows[5].Cells[1].Value = result[4].ToString();
             dataGridView1.Rows[6].Cells[1].Value = result[5].ToString();
+            dataGridView1.Rows[7].Cells[1].Value = result[6].ToString();
 
             result = Simulation.Sim(12, 20, Convert.ToDouble(ExpCount_TextBox.Text));
             dataGridView1.Rows[1].Cells[2].Value = result[0].ToString();
@@ -49,6 +51,7 @@ namespace Metrology_1
             dataGridView1.Rows[4].Cells[2].Value = result[3].ToString();
             dataGridView1.Rows[5].Cells[2].Value = result[4].ToString();
             dataGridView1.Rows[6].Cells[2].Value = result[5].ToString();
+            dataGridView1.Rows[7].Cells[2].Value = result[6].ToString();
 
             result = Simulation.Sim(25, 39, Convert.ToDouble(ExpCount_TextBox.Text));
             dataGridView1.Rows[1].Cells[3].Value = result[0].ToString();
@@ -57,6 +60,7 @@ namespace Metrology_1
             dataGridView1.Rows[4].Cells[3].Value = result[3].ToString();
             dataGridView1.Rows[5].Cells[3].Value = result[4].ToString();
             dataGridView1.Rows[6].Cells[3].Value = result[5].ToString();
+            dataGridView1.Rows[7].Cells[3].Value = result[6].ToString();
 
             result = Simulation.Sim(28, 100, Convert.ToDouble(ExpCount_TextBox.Text));
             dataGridView1.Rows[1].Cells[4].Value = result[0].ToString();
@@ -65,6 +69,7 @@ namespace Metrology_1
             dataGridView1.Rows[4].Cells[4].Value = result[3].ToString();
             dataGridView1.Rows[5].Cells[4].Value = result[4].ToString();
             dataGridView1.Rows[6].Cells[4].Value = result[5].ToString();
+            dataGridView1.Rows[7].Cells[4].Value = result[6].ToString();
 
             result = Simulation.Sim(Convert.ToInt32(OperandCount_TextBox.Text),
                 Convert.ToInt32(OperatorCount_TextBox.Text),
@@ -75,6 +80,7 @@ namespace Metrology_1
             dataGridView1.Rows[4].Cells[5].Value = result[3].ToString();
             dataGridView1.Rows[5].Cells[5].Value = result[4].ToString();
             dataGridView1.Rows[6].Cells[5].Value = result[5].ToString();
+            dataGridView1.Rows[7].Cells[5].Value = result[6].ToString();
         }
     }
 }

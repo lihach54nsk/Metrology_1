@@ -14,7 +14,7 @@ namespace Metrology_1
         public static double[] Sim(int n1, int n2, double exNumber)
         {
             double kvantil = 1.9623391; // a = 95, n = 1000
-            double[] result = new double[6];
+            double[] result = new double[7];
             double sumQ2 = 0;
             Random random = new Random();
             double countSymbols = 0.0;
@@ -52,10 +52,11 @@ namespace Metrology_1
             double errorT = 1 / (2 * Math.Log(n1 + n2, 2));
             result[0] = (double)countSymbols / exNumber;
             result[1] = (sumQ2 - result[0]) / (exNumber * (n1 + n2 - 1));
-            result[2] = Math.Sqrt(result[1] / result[0]);
+            result[2] = Math.Sqrt(result[1]) / result[0];
             result[3] = mathT;
             result[4] = dispT;
             result[5] = errorT;
+            result[6] = exNumber;
 
             var N = GetN(kvantil, result[1], 0.1);
 
