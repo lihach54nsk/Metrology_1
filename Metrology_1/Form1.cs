@@ -19,7 +19,9 @@ namespace Metrology_1
 
         private void start_Click(object sender, EventArgs e)
         {
-
+            outputTextBox.Text = Simulation.Sim(Convert.ToInt32(OperandCount_TextBox.Text),
+                Convert.ToInt32(OperatorCount_TextBox.Text),
+                Convert.ToInt32(ExpCount_TextBox.Text)).ToString();
         }
     }
 }
