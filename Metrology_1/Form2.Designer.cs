@@ -37,6 +37,13 @@
             this.numberOfEdgesTextBox = new System.Windows.Forms.TextBox();
             this.numberOfKnotsTextBox = new System.Windows.Forms.TextBox();
             this.macKeibButton = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.GilbOutTextBox = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.numberOfIFELSETextBox = new System.Windows.Forms.TextBox();
+            this.numberOfOperatorsTextBox = new System.Windows.Forms.TextBox();
+            this.GilbButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -117,11 +124,79 @@
             this.macKeibButton.UseVisualStyleBackColor = true;
             this.macKeibButton.Click += new System.EventHandler(this.macKeibButton_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(329, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(134, 13);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Количество операторов: ";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(329, 35);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(221, 13);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Количество операторов IF - THEN - ELSE: ";
+            // 
+            // GilbOutTextBox
+            // 
+            this.GilbOutTextBox.Location = new System.Drawing.Point(436, 90);
+            this.GilbOutTextBox.Name = "GilbOutTextBox";
+            this.GilbOutTextBox.ReadOnly = true;
+            this.GilbOutTextBox.Size = new System.Drawing.Size(100, 20);
+            this.GilbOutTextBox.TabIndex = 12;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(329, 93);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(101, 13);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Метрика Джилба: ";
+            // 
+            // numberOfIFELSETextBox
+            // 
+            this.numberOfIFELSETextBox.Location = new System.Drawing.Point(556, 32);
+            this.numberOfIFELSETextBox.Name = "numberOfIFELSETextBox";
+            this.numberOfIFELSETextBox.Size = new System.Drawing.Size(100, 20);
+            this.numberOfIFELSETextBox.TabIndex = 13;
+            this.numberOfIFELSETextBox.Text = "3";
+            // 
+            // numberOfOperatorsTextBox
+            // 
+            this.numberOfOperatorsTextBox.Location = new System.Drawing.Point(556, 6);
+            this.numberOfOperatorsTextBox.Name = "numberOfOperatorsTextBox";
+            this.numberOfOperatorsTextBox.Size = new System.Drawing.Size(100, 20);
+            this.numberOfOperatorsTextBox.TabIndex = 14;
+            this.numberOfOperatorsTextBox.Text = "35";
+            // 
+            // GilbButton
+            // 
+            this.GilbButton.Location = new System.Drawing.Point(332, 123);
+            this.GilbButton.Name = "GilbButton";
+            this.GilbButton.Size = new System.Drawing.Size(120, 23);
+            this.GilbButton.TabIndex = 15;
+            this.GilbButton.Text = "Метрика Джилба";
+            this.GilbButton.UseVisualStyleBackColor = true;
+            this.GilbButton.Click += new System.EventHandler(this.GilbButton_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 339);
+            this.Controls.Add(this.GilbButton);
+            this.Controls.Add(this.numberOfOperatorsTextBox);
+            this.Controls.Add(this.numberOfIFELSETextBox);
+            this.Controls.Add(this.GilbOutTextBox);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.macKeibButton);
             this.Controls.Add(this.numberOfKnotsTextBox);
             this.Controls.Add(this.numberOfEdgesTextBox);
@@ -149,5 +224,12 @@
         private System.Windows.Forms.TextBox numberOfEdgesTextBox;
         private System.Windows.Forms.TextBox numberOfKnotsTextBox;
         private System.Windows.Forms.Button macKeibButton;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox GilbOutTextBox;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox numberOfIFELSETextBox;
+        private System.Windows.Forms.TextBox numberOfOperatorsTextBox;
+        private System.Windows.Forms.Button GilbButton;
     }
 }

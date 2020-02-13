@@ -23,5 +23,11 @@ namespace Metrology_1
                 Convert.ToInt32(numberOfEdgesTextBox.Text),
                 Convert.ToInt32(numberOfConnectednessTextBox.Text)).ToString();
         }
+
+        private void GilbButton_Click(object sender, EventArgs e)
+        {
+            GilbOutTextBox.Text = Metrics.Gilb(Convert.ToInt32(numberOfOperatorsTextBox.Text),
+                Convert.ToInt32(numberOfIFELSETextBox.Text)).ToString();
+        }
     }
 }
