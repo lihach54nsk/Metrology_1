@@ -70,6 +70,11 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.calculateAllButton = new System.Windows.Forms.Button();
+            this.spanTextBox = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.spanOutTextBox = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.spanButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -438,11 +443,60 @@
             this.calculateAllButton.UseVisualStyleBackColor = true;
             this.calculateAllButton.Click += new System.EventHandler(this.calculateAllButton_Click);
             // 
+            // spanTextBox
+            // 
+            this.spanTextBox.Location = new System.Drawing.Point(856, 155);
+            this.spanTextBox.Name = "spanTextBox";
+            this.spanTextBox.Size = new System.Drawing.Size(100, 20);
+            this.spanTextBox.TabIndex = 43;
+            this.spanTextBox.Text = "2 12 10 9 7 3 2 5 4 3 4 3 4 5 3";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(662, 158);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(188, 13);
+            this.label19.TabIndex = 42;
+            this.label19.Text = "Количество спенов (через пробел): ";
+            // 
+            // spanOutTextBox
+            // 
+            this.spanOutTextBox.Location = new System.Drawing.Point(758, 262);
+            this.spanOutTextBox.Name = "spanOutTextBox";
+            this.spanOutTextBox.ReadOnly = true;
+            this.spanOutTextBox.Size = new System.Drawing.Size(100, 20);
+            this.spanOutTextBox.TabIndex = 45;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(662, 265);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(90, 13);
+            this.label20.TabIndex = 44;
+            this.label20.Text = "Метрика спена: ";
+            // 
+            // spanButton
+            // 
+            this.spanButton.Location = new System.Drawing.Point(665, 295);
+            this.spanButton.Name = "spanButton";
+            this.spanButton.Size = new System.Drawing.Size(159, 23);
+            this.spanButton.TabIndex = 46;
+            this.spanButton.Text = "Метрика спена";
+            this.spanButton.UseVisualStyleBackColor = true;
+            this.spanButton.Click += new System.EventHandler(this.spanButton_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(975, 354);
+            this.Controls.Add(this.spanButton);
+            this.Controls.Add(this.spanOutTextBox);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.spanTextBox);
+            this.Controls.Add(this.label19);
             this.Controls.Add(this.calculateAllButton);
             this.Controls.Add(this.commentsButton);
             this.Controls.Add(this.commentsTextBox);
@@ -536,5 +590,10 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button calculateAllButton;
+        private System.Windows.Forms.TextBox spanTextBox;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox spanOutTextBox;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Button spanButton;
     }
 }

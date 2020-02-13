@@ -66,5 +66,10 @@ namespace Metrology_1
             commentsOutTextBox.Text = Metrics.Comments(Convert.ToInt32(commentsTextBox.Text),
                 Convert.ToInt32(programLenghtTextBox.Text)).ToString();
         }
+
+        private void spanButton_Click(object sender, EventArgs e)
+        {
+            spanOutTextBox.Text = Metrics.Span(spanTextBox.Text);
+        }
     }
 }
