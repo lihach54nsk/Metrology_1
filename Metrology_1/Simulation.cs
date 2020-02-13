@@ -58,7 +58,7 @@ namespace Metrology_1
             result[5] = 1 / (2 * Math.Log(n1 + n2, 2));
             result[6] = exNumber;
 
-            var N = GetN(kvantil, result[1], 0.1);
+            double N = GetN(kvantil, result[1], 0.1);
 
             if (N < exNumber) return result;
             else return Sim(n1, n2, N);
