@@ -51,6 +51,17 @@
             this.globalButton = new System.Windows.Forms.Button();
             this.globalOutTextBox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.inputOutputVarsTextBox = new System.Windows.Forms.TextBox();
+            this.modVarsTextBox = new System.Windows.Forms.TextBox();
+            this.controlVarsTextBox = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.garbageVarsTextBox = new System.Windows.Forms.TextBox();
+            this.chepinButton = new System.Windows.Forms.Button();
+            this.chepinOutTextBox = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -253,11 +264,117 @@
             this.label10.TabIndex = 20;
             this.label10.Text = "Метрика глобальных переменных: ";
             // 
+            // inputOutputVarsTextBox
+            // 
+            this.inputOutputVarsTextBox.Location = new System.Drawing.Point(224, 155);
+            this.inputOutputVarsTextBox.Name = "inputOutputVarsTextBox";
+            this.inputOutputVarsTextBox.Size = new System.Drawing.Size(100, 20);
+            this.inputOutputVarsTextBox.TabIndex = 28;
+            this.inputOutputVarsTextBox.Text = "4";
+            // 
+            // modVarsTextBox
+            // 
+            this.modVarsTextBox.Location = new System.Drawing.Point(224, 181);
+            this.modVarsTextBox.Name = "modVarsTextBox";
+            this.modVarsTextBox.Size = new System.Drawing.Size(100, 20);
+            this.modVarsTextBox.TabIndex = 27;
+            this.modVarsTextBox.Text = "12";
+            // 
+            // controlVarsTextBox
+            // 
+            this.controlVarsTextBox.Location = new System.Drawing.Point(224, 207);
+            this.controlVarsTextBox.Name = "controlVarsTextBox";
+            this.controlVarsTextBox.Size = new System.Drawing.Size(100, 20);
+            this.controlVarsTextBox.TabIndex = 26;
+            this.controlVarsTextBox.Text = "6";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(13, 210);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(183, 13);
+            this.label11.TabIndex = 25;
+            this.label11.Text = "Число управляющих переменных: ";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(13, 184);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(204, 13);
+            this.label12.TabIndex = 24;
+            this.label12.Text = "Число модифицируемых переменных: ";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(13, 158);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(185, 13);
+            this.label13.TabIndex = 23;
+            this.label13.Text = "Число переменных ввода-вывода: ";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(13, 236);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(174, 13);
+            this.label14.TabIndex = 29;
+            this.label14.Text = "Число паразитных переменных: ";
+            // 
+            // garbageVarsTextBox
+            // 
+            this.garbageVarsTextBox.Location = new System.Drawing.Point(223, 233);
+            this.garbageVarsTextBox.Name = "garbageVarsTextBox";
+            this.garbageVarsTextBox.Size = new System.Drawing.Size(100, 20);
+            this.garbageVarsTextBox.TabIndex = 30;
+            this.garbageVarsTextBox.Text = "0";
+            // 
+            // chepinButton
+            // 
+            this.chepinButton.Location = new System.Drawing.Point(16, 295);
+            this.chepinButton.Name = "chepinButton";
+            this.chepinButton.Size = new System.Drawing.Size(120, 23);
+            this.chepinButton.TabIndex = 32;
+            this.chepinButton.Text = "Метрика Чепина";
+            this.chepinButton.UseVisualStyleBackColor = true;
+            this.chepinButton.Click += new System.EventHandler(this.chepinButton_Click);
+            // 
+            // chepinOutTextBox
+            // 
+            this.chepinOutTextBox.Location = new System.Drawing.Point(131, 262);
+            this.chepinOutTextBox.Name = "chepinOutTextBox";
+            this.chepinOutTextBox.ReadOnly = true;
+            this.chepinOutTextBox.Size = new System.Drawing.Size(100, 20);
+            this.chepinOutTextBox.TabIndex = 33;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(13, 265);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(98, 13);
+            this.label15.TabIndex = 31;
+            this.label15.Text = "Метрика Чепина: ";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(997, 339);
+            this.ClientSize = new System.Drawing.Size(975, 339);
+            this.Controls.Add(this.chepinButton);
+            this.Controls.Add(this.chepinOutTextBox);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.garbageVarsTextBox);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.inputOutputVarsTextBox);
+            this.Controls.Add(this.modVarsTextBox);
+            this.Controls.Add(this.controlVarsTextBox);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.globalButton);
             this.Controls.Add(this.globalOutTextBox);
             this.Controls.Add(this.label10);
@@ -313,5 +430,16 @@
         private System.Windows.Forms.Button globalButton;
         private System.Windows.Forms.TextBox globalOutTextBox;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox inputOutputVarsTextBox;
+        private System.Windows.Forms.TextBox modVarsTextBox;
+        private System.Windows.Forms.TextBox controlVarsTextBox;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox garbageVarsTextBox;
+        private System.Windows.Forms.Button chepinButton;
+        private System.Windows.Forms.TextBox chepinOutTextBox;
+        private System.Windows.Forms.Label label15;
     }
 }

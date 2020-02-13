@@ -35,5 +35,13 @@ namespace Metrology_1
             globalOutTextBox.Text = Metrics.GlobalVarUse(Convert.ToInt32(numberOfGlobalVars.Text),
                 Convert.ToInt32(numberOfPossibleUsingGlobalVars.Text)).ToString();
         }
+
+        private void chepinButton_Click(object sender, EventArgs e)
+        {
+            chepinOutTextBox.Text = Metrics.Chepin(Convert.ToInt32(inputOutputVarsTextBox.Text),
+                Convert.ToInt32(modVarsTextBox.Text),
+                Convert.ToInt32(controlVarsTextBox.Text),
+                Convert.ToInt32(garbageVarsTextBox.Text)).ToString();
+        }
     }
 }
