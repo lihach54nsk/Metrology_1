@@ -43,5 +43,28 @@ namespace Metrology_1
                 Convert.ToInt32(controlVarsTextBox.Text),
                 Convert.ToInt32(garbageVarsTextBox.Text)).ToString();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            commentsOutTextBox.Text = Metrics.Comments(Convert.ToInt32(commentsTextBox.Text),
+                Convert.ToInt32(programLenghtTextBox.Text)).ToString();
+        }
+
+        private void calculateAllButton_Click(object sender, EventArgs e)
+        {
+            macKeibOutTextBox.Text = Metrics.MacKeib(Convert.ToInt32(numberOfKnotsTextBox.Text),
+                Convert.ToInt32(numberOfEdgesTextBox.Text),
+                Convert.ToInt32(numberOfConnectednessTextBox.Text)).ToString();
+            GilbOutTextBox.Text = Metrics.Gilb(Convert.ToInt32(numberOfOperatorsTextBox.Text),
+                Convert.ToInt32(numberOfIFELSETextBox.Text)).ToString();
+            globalOutTextBox.Text = Metrics.GlobalVarUse(Convert.ToInt32(numberOfGlobalVars.Text),
+                Convert.ToInt32(numberOfPossibleUsingGlobalVars.Text)).ToString();
+            chepinOutTextBox.Text = Metrics.Chepin(Convert.ToInt32(inputOutputVarsTextBox.Text),
+                Convert.ToInt32(modVarsTextBox.Text),
+                Convert.ToInt32(controlVarsTextBox.Text),
+                Convert.ToInt32(garbageVarsTextBox.Text)).ToString();
+            commentsOutTextBox.Text = Metrics.Comments(Convert.ToInt32(commentsTextBox.Text),
+                Convert.ToInt32(programLenghtTextBox.Text)).ToString();
+        }
     }
 }

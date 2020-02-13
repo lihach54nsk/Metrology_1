@@ -62,6 +62,14 @@
             this.chepinButton = new System.Windows.Forms.Button();
             this.chepinOutTextBox = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
+            this.commentsButton = new System.Windows.Forms.Button();
+            this.commentsTextBox = new System.Windows.Forms.TextBox();
+            this.programLenghtTextBox = new System.Windows.Forms.TextBox();
+            this.commentsOutTextBox = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.calculateAllButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -359,11 +367,90 @@
             this.label15.TabIndex = 31;
             this.label15.Text = "Метрика Чепина: ";
             // 
+            // commentsButton
+            // 
+            this.commentsButton.Location = new System.Drawing.Point(333, 295);
+            this.commentsButton.Name = "commentsButton";
+            this.commentsButton.Size = new System.Drawing.Size(159, 23);
+            this.commentsButton.TabIndex = 40;
+            this.commentsButton.Text = "Метрика комментирования";
+            this.commentsButton.UseVisualStyleBackColor = true;
+            this.commentsButton.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // commentsTextBox
+            // 
+            this.commentsTextBox.Location = new System.Drawing.Point(541, 155);
+            this.commentsTextBox.Name = "commentsTextBox";
+            this.commentsTextBox.Size = new System.Drawing.Size(100, 20);
+            this.commentsTextBox.TabIndex = 39;
+            this.commentsTextBox.Text = "0";
+            // 
+            // programLenghtTextBox
+            // 
+            this.programLenghtTextBox.Location = new System.Drawing.Point(541, 181);
+            this.programLenghtTextBox.Name = "programLenghtTextBox";
+            this.programLenghtTextBox.Size = new System.Drawing.Size(100, 20);
+            this.programLenghtTextBox.TabIndex = 38;
+            this.programLenghtTextBox.Text = "70";
+            // 
+            // commentsOutTextBox
+            // 
+            this.commentsOutTextBox.Location = new System.Drawing.Point(489, 262);
+            this.commentsOutTextBox.Name = "commentsOutTextBox";
+            this.commentsOutTextBox.ReadOnly = true;
+            this.commentsOutTextBox.Size = new System.Drawing.Size(100, 20);
+            this.commentsOutTextBox.TabIndex = 37;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(330, 265);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(153, 13);
+            this.label16.TabIndex = 36;
+            this.label16.Text = "Метрика комментирования: ";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(330, 184);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(205, 13);
+            this.label17.TabIndex = 35;
+            this.label17.Text = "Количество строк текста/операторов: ";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(330, 158);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(150, 13);
+            this.label18.TabIndex = 34;
+            this.label18.Text = "Количество комментариев: ";
+            // 
+            // calculateAllButton
+            // 
+            this.calculateAllButton.Location = new System.Drawing.Point(12, 324);
+            this.calculateAllButton.Name = "calculateAllButton";
+            this.calculateAllButton.Size = new System.Drawing.Size(480, 23);
+            this.calculateAllButton.TabIndex = 41;
+            this.calculateAllButton.Text = "Посчитать всё";
+            this.calculateAllButton.UseVisualStyleBackColor = true;
+            this.calculateAllButton.Click += new System.EventHandler(this.calculateAllButton_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(975, 339);
+            this.ClientSize = new System.Drawing.Size(975, 354);
+            this.Controls.Add(this.calculateAllButton);
+            this.Controls.Add(this.commentsButton);
+            this.Controls.Add(this.commentsTextBox);
+            this.Controls.Add(this.programLenghtTextBox);
+            this.Controls.Add(this.commentsOutTextBox);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label18);
             this.Controls.Add(this.chepinButton);
             this.Controls.Add(this.chepinOutTextBox);
             this.Controls.Add(this.label15);
@@ -441,5 +528,13 @@
         private System.Windows.Forms.Button chepinButton;
         private System.Windows.Forms.TextBox chepinOutTextBox;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button commentsButton;
+        private System.Windows.Forms.TextBox commentsTextBox;
+        private System.Windows.Forms.TextBox programLenghtTextBox;
+        private System.Windows.Forms.TextBox commentsOutTextBox;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Button calculateAllButton;
     }
 }
