@@ -29,5 +29,11 @@ namespace Metrology_1
             GilbOutTextBox.Text = Metrics.Gilb(Convert.ToInt32(numberOfOperatorsTextBox.Text),
                 Convert.ToInt32(numberOfIFELSETextBox.Text)).ToString();
         }
+
+        private void globalButton_Click(object sender, EventArgs e)
+        {
+            globalOutTextBox.Text = Metrics.GlobalVarUse(Convert.ToInt32(numberOfGlobalVars.Text),
+                Convert.ToInt32(numberOfPossibleUsingGlobalVars.Text)).ToString();
+        }
     }
 }

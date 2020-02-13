@@ -44,6 +44,13 @@
             this.numberOfIFELSETextBox = new System.Windows.Forms.TextBox();
             this.numberOfOperatorsTextBox = new System.Windows.Forms.TextBox();
             this.GilbButton = new System.Windows.Forms.Button();
+            this.numberOfGlobalVars = new System.Windows.Forms.TextBox();
+            this.numberOfPossibleUsingGlobalVars = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.globalButton = new System.Windows.Forms.Button();
+            this.globalOutTextBox = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -185,11 +192,79 @@
             this.GilbButton.UseVisualStyleBackColor = true;
             this.GilbButton.Click += new System.EventHandler(this.GilbButton_Click);
             // 
+            // numberOfGlobalVars
+            // 
+            this.numberOfGlobalVars.Location = new System.Drawing.Point(869, 6);
+            this.numberOfGlobalVars.Name = "numberOfGlobalVars";
+            this.numberOfGlobalVars.Size = new System.Drawing.Size(100, 20);
+            this.numberOfGlobalVars.TabIndex = 19;
+            this.numberOfGlobalVars.Text = "0";
+            // 
+            // numberOfPossibleUsingGlobalVars
+            // 
+            this.numberOfPossibleUsingGlobalVars.Location = new System.Drawing.Point(869, 32);
+            this.numberOfPossibleUsingGlobalVars.Name = "numberOfPossibleUsingGlobalVars";
+            this.numberOfPossibleUsingGlobalVars.Size = new System.Drawing.Size(100, 20);
+            this.numberOfPossibleUsingGlobalVars.TabIndex = 18;
+            this.numberOfPossibleUsingGlobalVars.Text = "0";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(662, 35);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(187, 13);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Количество возможносте доступа: ";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(662, 9);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(201, 13);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "Количество глобальных переменных: ";
+            // 
+            // globalButton
+            // 
+            this.globalButton.Location = new System.Drawing.Point(665, 123);
+            this.globalButton.Name = "globalButton";
+            this.globalButton.Size = new System.Drawing.Size(204, 23);
+            this.globalButton.TabIndex = 22;
+            this.globalButton.Text = "Метрика глобальных переменных";
+            this.globalButton.UseVisualStyleBackColor = true;
+            this.globalButton.Click += new System.EventHandler(this.globalButton_Click);
+            // 
+            // globalOutTextBox
+            // 
+            this.globalOutTextBox.Location = new System.Drawing.Point(854, 90);
+            this.globalOutTextBox.Name = "globalOutTextBox";
+            this.globalOutTextBox.ReadOnly = true;
+            this.globalOutTextBox.Size = new System.Drawing.Size(100, 20);
+            this.globalOutTextBox.TabIndex = 21;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(662, 93);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(186, 13);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "Метрика глобальных переменных: ";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 339);
+            this.ClientSize = new System.Drawing.Size(997, 339);
+            this.Controls.Add(this.globalButton);
+            this.Controls.Add(this.globalOutTextBox);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.numberOfGlobalVars);
+            this.Controls.Add(this.numberOfPossibleUsingGlobalVars);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.GilbButton);
             this.Controls.Add(this.numberOfOperatorsTextBox);
             this.Controls.Add(this.numberOfIFELSETextBox);
@@ -231,5 +306,12 @@
         private System.Windows.Forms.TextBox numberOfIFELSETextBox;
         private System.Windows.Forms.TextBox numberOfOperatorsTextBox;
         private System.Windows.Forms.Button GilbButton;
+        private System.Windows.Forms.TextBox numberOfGlobalVars;
+        private System.Windows.Forms.TextBox numberOfPossibleUsingGlobalVars;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button globalButton;
+        private System.Windows.Forms.TextBox globalOutTextBox;
+        private System.Windows.Forms.Label label10;
     }
 }
