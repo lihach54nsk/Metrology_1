@@ -37,12 +37,14 @@
             this.OperatorCount_TextBox = new System.Windows.Forms.TextBox();
             this.outputTextBox = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.second_Button = new System.Windows.Forms.Button();
+            this.third_Button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // start
             // 
-            this.start.Location = new System.Drawing.Point(12, 250);
+            this.start.Location = new System.Drawing.Point(12, 118);
             this.start.Name = "start";
             this.start.Size = new System.Drawing.Size(162, 52);
             this.start.TabIndex = 0;
@@ -119,11 +121,33 @@
             this.dataGridView1.Size = new System.Drawing.Size(712, 294);
             this.dataGridView1.TabIndex = 8;
             // 
+            // second_Button
+            // 
+            this.second_Button.Location = new System.Drawing.Point(12, 279);
+            this.second_Button.Name = "second_Button";
+            this.second_Button.Size = new System.Drawing.Size(75, 23);
+            this.second_Button.TabIndex = 9;
+            this.second_Button.Text = "Лаба 2";
+            this.second_Button.UseVisualStyleBackColor = true;
+            this.second_Button.Click += new System.EventHandler(this.second_Button_Click);
+            // 
+            // third_Button
+            // 
+            this.third_Button.Location = new System.Drawing.Point(99, 279);
+            this.third_Button.Name = "third_Button";
+            this.third_Button.Size = new System.Drawing.Size(75, 23);
+            this.third_Button.TabIndex = 10;
+            this.third_Button.Text = "Лаба 3";
+            this.third_Button.UseVisualStyleBackColor = true;
+            this.third_Button.Click += new System.EventHandler(this.third_Button_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1022, 314);
+            this.Controls.Add(this.third_Button);
+            this.Controls.Add(this.second_Button);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.outputTextBox);
             this.Controls.Add(this.OperatorCount_TextBox);
@@ -152,6 +176,8 @@
         private System.Windows.Forms.TextBox OperatorCount_TextBox;
         private System.Windows.Forms.TextBox outputTextBox;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button second_Button;
+        private System.Windows.Forms.Button third_Button;
     }
 }
 

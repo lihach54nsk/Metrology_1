@@ -82,5 +82,17 @@ namespace Metrology_1
             dataGridView1.Rows[6].Cells[5].Value = result[5].ToString();
             dataGridView1.Rows[7].Cells[5].Value = result[6].ToString();
         }
+
+        private void second_Button_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
+        }
+
+        private void third_Button_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.Show();
+        }
     }
 }
