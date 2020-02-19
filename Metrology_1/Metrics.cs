@@ -21,10 +21,31 @@ namespace Metrology_1
 
         public static double Comments(int Ncom, int Nlength) => (double)Ncom / Nlength;
 
+        public static double Mills(int m, int v, int allMistakes)
+        {
+            double C_self, C_fake;
+
+            C_fake = C(allMistakes - v, m);
+            C_self = C(allMistakes, m + v);
+
+            return (double)(C_fake / C_self);
+        }
+
+        static double C(int a, int b) => (double)(Factorial(a)) / (Factorial(b) * (Factorial(a - b)));
+
+        static int Factorial(int number)
+        {
+            int result = number;
+            if (number == 0) return 1;
+
+            for (int i = number - 1; i != 0; i--)
+                result *= i;
+            return result;
+        }
         public static string Span(string input)
         {
             string[] parsed = input.Split(new char[] { ' ', '\0' }, StringSplitOptions.RemoveEmptyEntries);
-            
+
             int[] spans = new int[parsed.Length];
             double sum = 0;
 
