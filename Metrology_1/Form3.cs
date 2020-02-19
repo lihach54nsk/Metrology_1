@@ -52,11 +52,11 @@ namespace Metrology_1
             dataGridView1.Rows[2].Cells[1].Value = Metrics.Mills(Convert.ToInt32(dataGridView1.Rows[0].Cells[1].Value),
                 Convert.ToInt32(dataGridView1.Rows[1].Cells[1].Value), allMistakes_test);
             dataGridView1.Rows[2].Cells[2].Value = Metrics.Mills(Convert.ToInt32(dataGridView1.Rows[0].Cells[2].Value),
-                Convert.ToInt32(dataGridView1.Rows[1].Cells[2].Value), Convert.ToInt32(mistakesTextBox.Text));
+                Convert.ToInt32(dataGridView1.Rows[1].Cells[2].Value), allMistakes);
             dataGridView1.Rows[2].Cells[3].Value = Metrics.Mills(Convert.ToInt32(dataGridView1.Rows[0].Cells[3].Value),
-                Convert.ToInt32(dataGridView1.Rows[1].Cells[3].Value), Convert.ToInt32(mistakesTextBox.Text));
+                Convert.ToInt32(dataGridView1.Rows[1].Cells[3].Value), allMistakes);
             dataGridView1.Rows[2].Cells[4].Value = Metrics.Mills(Convert.ToInt32(dataGridView1.Rows[0].Cells[4].Value),
-                Convert.ToInt32(dataGridView1.Rows[1].Cells[4].Value), Convert.ToInt32(mistakesTextBox.Text));
+                Convert.ToInt32(dataGridView1.Rows[1].Cells[4].Value), allMistakes);
             dataGridView1.Rows[2].Cells[5].Value = Metrics.Mills(Convert.ToInt32(dataGridView1.Rows[0].Cells[5].Value),
                 Convert.ToInt32(dataGridView1.Rows[1].Cells[5].Value), Convert.ToInt32(mistakesTextBox.Text));
         }
