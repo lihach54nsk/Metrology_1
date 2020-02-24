@@ -28,8 +28,8 @@ namespace Metrology_1
             dataGridView1.Rows[1].Cells[0].Value = "v";
             dataGridView1.Rows[2].Cells[0].Value = "P";
 
-            dataGridView1.Rows[0].Cells[1].Value = "4";
-            dataGridView1.Rows[1].Cells[1].Value = "1";
+            dataGridView1.Rows[0].Cells[1].Value = "12";
+            dataGridView1.Rows[1].Cells[1].Value = "7";
 
             dataGridView1.Rows[0].Cells[2].Value = "6";
             dataGridView1.Rows[1].Cells[2].Value = "2";
@@ -41,24 +41,27 @@ namespace Metrology_1
             dataGridView1.Rows[1].Cells[4].Value = "4";
 
             dataGridView1.Rows[0].Cells[5].Value = "5";
-            dataGridView1.Rows[1].Cells[5].Value = "4";
+            dataGridView1.Rows[1].Cells[5].Value = "0";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            const int allMistakes = 9;
-            const int allMistakes_test = 11;
+            const int M = 6;
+            const int allMistakes_test = 20;
 
-            dataGridView1.Rows[2].Cells[1].Value = Metrics.Mills(Convert.ToInt32(dataGridView1.Rows[0].Cells[1].Value),
-                Convert.ToInt32(dataGridView1.Rows[1].Cells[1].Value), allMistakes_test);
-            dataGridView1.Rows[2].Cells[2].Value = Metrics.Mills(Convert.ToInt32(dataGridView1.Rows[0].Cells[2].Value),
-                Convert.ToInt32(dataGridView1.Rows[1].Cells[2].Value), allMistakes);
-            dataGridView1.Rows[2].Cells[3].Value = Metrics.Mills(Convert.ToInt32(dataGridView1.Rows[0].Cells[3].Value),
-                Convert.ToInt32(dataGridView1.Rows[1].Cells[3].Value), allMistakes);
-            dataGridView1.Rows[2].Cells[4].Value = Metrics.Mills(Convert.ToInt32(dataGridView1.Rows[0].Cells[4].Value),
-                Convert.ToInt32(dataGridView1.Rows[1].Cells[4].Value), allMistakes);
-            dataGridView1.Rows[2].Cells[5].Value = Metrics.Mills(Convert.ToInt32(dataGridView1.Rows[0].Cells[5].Value),
-                Convert.ToInt32(dataGridView1.Rows[1].Cells[5].Value), Convert.ToInt32(mistakesTextBox.Text));
+            dataGridView1.Rows[2].Cells[1].Value = Metrics.HabrMills(Convert.ToInt32(dataGridView1.Rows[0].Cells[1].Value),
+                Convert.ToInt32(dataGridView1.Rows[1].Cells[1].Value), allMistakes_test) * 100;
+            dataGridView1.Rows[2].Cells[2].Value = Metrics.HabrMills(Convert.ToInt32(dataGridView1.Rows[0].Cells[2].Value),
+                Convert.ToInt32(dataGridView1.Rows[1].Cells[2].Value), M) * 100;
+            dataGridView1.Rows[2].Cells[3].Value = Metrics.HabrMills(Convert.ToInt32(dataGridView1.Rows[0].Cells[3].Value),
+                Convert.ToInt32(dataGridView1.Rows[1].Cells[3].Value), M) * 100;
+            dataGridView1.Rows[2].Cells[4].Value = Metrics.HabrMills(Convert.ToInt32(dataGridView1.Rows[0].Cells[4].Value),
+                Convert.ToInt32(dataGridView1.Rows[1].Cells[4].Value), M) * 100;
+            dataGridView1.Rows[2].Cells[5].Value = Metrics.HabrMills(Convert.ToInt32(dataGridView1.Rows[0].Cells[5].Value),
+                Convert.ToInt32(dataGridView1.Rows[1].Cells[5].Value),
+                Convert.ToInt32(mistakesTextBox.Text)) * 100;
+            /*Metrics.Mills(Convert.ToInt32(dataGridView1.Rows[0].Cells[5].Value),
+            Convert.ToInt32(dataGridView1.Rows[1].Cells[5].Value), Convert.ToInt32(mistakesTextBox.Text));*/
         }
     }
 }

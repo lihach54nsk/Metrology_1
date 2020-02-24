@@ -31,6 +31,14 @@ namespace Metrology_1
             return (double)(C_fake / C_self);
         }
 
+        public static double HabrMills(int m, int n, int M)
+        {
+            double N = Math.Round(((double)n * M) / m); // всего ошибок в коде
+
+            if (n > N) return 1;
+            return ((double)M / (M + N + 1));
+        }
+
         static double C(int a, int b) => (double)(Factorial(a)) / (Factorial(b) * (Factorial(a - b)));
 
         static int Factorial(int number)

@@ -68,7 +68,7 @@
             this.mistakesTextBox.Name = "mistakesTextBox";
             this.mistakesTextBox.Size = new System.Drawing.Size(100, 20);
             this.mistakesTextBox.TabIndex = 3;
-            this.mistakesTextBox.Text = "9";
+            this.mistakesTextBox.Text = "20";
             // 
             // Form3
             // 
