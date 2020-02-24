@@ -60,8 +60,6 @@ namespace Metrology_1
             dataGridView1.Rows[2].Cells[5].Value = Metrics.HabrMills(Convert.ToInt32(dataGridView1.Rows[0].Cells[5].Value),
                 Convert.ToInt32(dataGridView1.Rows[1].Cells[5].Value),
                 Convert.ToInt32(mistakesTextBox.Text)) * 100;
-            /*Metrics.Mills(Convert.ToInt32(dataGridView1.Rows[0].Cells[5].Value),
-            Convert.ToInt32(dataGridView1.Rows[1].Cells[5].Value), Convert.ToInt32(mistakesTextBox.Text));*/
         }
     }
 }
