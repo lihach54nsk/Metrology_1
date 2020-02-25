@@ -25,8 +25,8 @@ namespace Metrology_1
         {
             double C_self, C_fake;
 
-            C_fake = C(allMistakes - v, m);
-            C_self = C(allMistakes, m + v);
+            C_fake = P(allMistakes - v, m);
+            C_self = P(allMistakes, m + v);
 
             return (double)(C_fake / C_self);
         }
@@ -39,7 +39,7 @@ namespace Metrology_1
             return ((double)M / (M + N + 1));
         }
 
-        static double C(int a, int b) => (double)(Factorial(a)) / (Factorial(b) * (Factorial(a - b)));
+        static double P(int a, int b) => (double)(Factorial(a)) / (Factorial(b) * (Factorial(a - b)));
 
         static int Factorial(int number)
         {
