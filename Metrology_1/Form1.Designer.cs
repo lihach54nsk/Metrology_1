@@ -86,7 +86,7 @@
             this.OperandCount_TextBox.Name = "OperandCount_TextBox";
             this.OperandCount_TextBox.Size = new System.Drawing.Size(100, 20);
             this.OperandCount_TextBox.TabIndex = 4;
-            this.OperandCount_TextBox.Text = "50";
+            this.OperandCount_TextBox.Text = "16";
             // 
             // OperatorCount_Label
             // 
@@ -104,7 +104,7 @@
             this.OperatorCount_TextBox.Name = "OperatorCount_TextBox";
             this.OperatorCount_TextBox.Size = new System.Drawing.Size(100, 20);
             this.OperatorCount_TextBox.TabIndex = 6;
-            this.OperatorCount_TextBox.Text = "1";
+            this.OperatorCount_TextBox.Text = "19";
             // 
             // outputTextBox
             // 
