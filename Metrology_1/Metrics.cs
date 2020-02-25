@@ -21,15 +21,22 @@ namespace Metrology_1
 
         public static double Comments(int Ncom, int Nlength) => (double)Ncom / Nlength;
 
-        public static double Mills(int m, int v, int allMistakes)
+        public static double Mills(int m, int n, int M)
         {
             double C_self, C_fake;
+            double N = Math.Round(((double)n * M) / m); // всего ошибок в коде
 
-            C_fake = P(allMistakes - v, m);
-            C_self = P(allMistakes, m + v);
+            if (n > N) return 1;
+            else
+            {
+                C_fake = P(M, m - 1);
+                C_self = P(M + (int)N + 1, m + (int)N);
 
-            return (double)(C_fake / C_self);
+                return (double)(C_fake / C_self);
+            }
         }
+
+        public static double N(int m, int n, int M) => Math.Round(((double)n * M) / m);
 
         public static double HabrMills(int m, int n, int M)
         {
