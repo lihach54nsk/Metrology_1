@@ -26,7 +26,7 @@ namespace Metrology_1
 
             dataGridView1.Rows[0].Cells[0].Value = "m";
             dataGridView1.Rows[1].Cells[0].Value = "v";
-            dataGridView1.Rows[2].Cells[0].Value = "P";
+            dataGridView1.Rows[2].Cells[0].Value = "C";
 
             dataGridView1.Rows[0].Cells[1].Value = "12";
             dataGridView1.Rows[1].Cells[1].Value = "7";
