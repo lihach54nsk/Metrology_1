@@ -31,8 +31,6 @@
             this.start = new System.Windows.Forms.Button();
             this.ExpCount_TextBox = new System.Windows.Forms.TextBox();
             this.ExpCount_Label = new System.Windows.Forms.Label();
-            this.OperandCount_Label = new System.Windows.Forms.Label();
-            this.OperandCount_TextBox = new System.Windows.Forms.TextBox();
             this.OperatorCount_Label = new System.Windows.Forms.Label();
             this.OperatorCount_TextBox = new System.Windows.Forms.TextBox();
             this.outputTextBox = new System.Windows.Forms.TextBox();
@@ -44,7 +42,7 @@
             // 
             // start
             // 
-            this.start.Location = new System.Drawing.Point(12, 118);
+            this.start.Location = new System.Drawing.Point(12, 68);
             this.start.Name = "start";
             this.start.Size = new System.Drawing.Size(162, 52);
             this.start.TabIndex = 0;
@@ -70,33 +68,15 @@
             this.ExpCount_Label.TabIndex = 2;
             this.ExpCount_Label.Text = "Количество эксперементов";
             // 
-            // OperandCount_Label
-            // 
-            this.OperandCount_Label.AutoSize = true;
-            this.OperandCount_Label.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.OperandCount_Label.Location = new System.Drawing.Point(12, 80);
-            this.OperandCount_Label.Name = "OperandCount_Label";
-            this.OperandCount_Label.Size = new System.Drawing.Size(145, 16);
-            this.OperandCount_Label.TabIndex = 3;
-            this.OperandCount_Label.Text = "Количество операндов";
-            // 
-            // OperandCount_TextBox
-            // 
-            this.OperandCount_TextBox.Location = new System.Drawing.Point(192, 79);
-            this.OperandCount_TextBox.Name = "OperandCount_TextBox";
-            this.OperandCount_TextBox.Size = new System.Drawing.Size(100, 20);
-            this.OperandCount_TextBox.TabIndex = 4;
-            this.OperandCount_TextBox.Text = "16";
-            // 
             // OperatorCount_Label
             // 
             this.OperatorCount_Label.AutoSize = true;
             this.OperatorCount_Label.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.OperatorCount_Label.Location = new System.Drawing.Point(12, 43);
             this.OperatorCount_Label.Name = "OperatorCount_Label";
-            this.OperatorCount_Label.Size = new System.Drawing.Size(149, 16);
+            this.OperatorCount_Label.Size = new System.Drawing.Size(98, 16);
             this.OperatorCount_Label.TabIndex = 5;
-            this.OperatorCount_Label.Text = "Количество операторов";
+            this.OperatorCount_Label.Text = "Длина словаря";
             // 
             // OperatorCount_TextBox
             // 
@@ -108,7 +88,7 @@
             // 
             // outputTextBox
             // 
-            this.outputTextBox.Location = new System.Drawing.Point(192, 118);
+            this.outputTextBox.Location = new System.Drawing.Point(192, 68);
             this.outputTextBox.Name = "outputTextBox";
             this.outputTextBox.ReadOnly = true;
             this.outputTextBox.Size = new System.Drawing.Size(100, 20);
@@ -153,8 +133,6 @@
             this.Controls.Add(this.outputTextBox);
             this.Controls.Add(this.OperatorCount_TextBox);
             this.Controls.Add(this.OperatorCount_Label);
-            this.Controls.Add(this.OperandCount_TextBox);
-            this.Controls.Add(this.OperandCount_Label);
             this.Controls.Add(this.ExpCount_Label);
             this.Controls.Add(this.ExpCount_TextBox);
             this.Controls.Add(this.start);
@@ -171,8 +149,6 @@
         private System.Windows.Forms.Button start;
         private System.Windows.Forms.TextBox ExpCount_TextBox;
         private System.Windows.Forms.Label ExpCount_Label;
-        private System.Windows.Forms.Label OperandCount_Label;
-        private System.Windows.Forms.TextBox OperandCount_TextBox;
         private System.Windows.Forms.Label OperatorCount_Label;
         private System.Windows.Forms.TextBox OperatorCount_TextBox;
         private System.Windows.Forms.TextBox outputTextBox;
