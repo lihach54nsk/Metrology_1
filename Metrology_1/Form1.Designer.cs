@@ -84,7 +84,7 @@
             this.OperatorCount_TextBox.Name = "OperatorCount_TextBox";
             this.OperatorCount_TextBox.Size = new System.Drawing.Size(100, 20);
             this.OperatorCount_TextBox.TabIndex = 6;
-            this.OperatorCount_TextBox.Text = "19";
+            this.OperatorCount_TextBox.Text = "36";
             // 
             // outputTextBox
             // 
