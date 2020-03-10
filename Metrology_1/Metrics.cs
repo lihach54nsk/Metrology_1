@@ -13,13 +13,13 @@ namespace Metrology_1
 
         public static int MacKeib(int E, int N, int p) => E - N + p;
 
-        public static double Gilb(int N, int Ca) => (double)Ca / N;
+        public static double Gilb(double N, double Ca) => Math.Round(Ca / N, 2);
 
         public static double GlobalVarUse(int P, int A) => (double)A / P;
 
-        public static double Chepin(int P, int M, int C, int T) => (double)P + 2 * M + 3 * C + 0.5 * T;
+        public static double Chepin(int P, int M, int C, int T) => Math.Round(P + 2 * M + 3 * C + 0.5 * T, 2);
 
-        public static double Comments(int Ncom, int Nlength) => (double)Ncom / Nlength;
+        public static double Comments(double Ncom, double Nlength) => Math.Round(Ncom / Nlength, 2);
 
         public static double Mills(int m, int n, int M)
         {
@@ -70,7 +70,7 @@ namespace Metrology_1
             foreach (var a in spans)
                 sum += a;
 
-            return ((double)(sum / spans.Length)).ToString();
+            return (Math.Round(sum / spans.Length, 2)).ToString();
         }
     }
 }

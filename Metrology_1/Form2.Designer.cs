@@ -388,7 +388,7 @@
             this.commentsTextBox.Name = "commentsTextBox";
             this.commentsTextBox.Size = new System.Drawing.Size(100, 20);
             this.commentsTextBox.TabIndex = 39;
-            this.commentsTextBox.Text = "0";
+            this.commentsTextBox.Text = "22";
             // 
             // programLenghtTextBox
             // 
