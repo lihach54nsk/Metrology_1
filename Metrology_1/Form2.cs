@@ -19,8 +19,8 @@ namespace Metrology_1
 
         private void macKeibButton_Click(object sender, EventArgs e)
         {
-            macKeibOutTextBox.Text = Metrics.MacKeib(Convert.ToInt32(numberOfKnotsTextBox.Text),
-                Convert.ToInt32(numberOfEdgesTextBox.Text),
+            macKeibOutTextBox.Text = Metrics.MacKeib(Convert.ToInt32(numberOfEdgesTextBox.Text),
+                Convert.ToInt32(numberOfKnotsTextBox.Text),
                 Convert.ToInt32(numberOfConnectednessTextBox.Text)).ToString();
         }
 
@@ -52,8 +52,8 @@ namespace Metrology_1
 
         private void calculateAllButton_Click(object sender, EventArgs e)
         {
-            macKeibOutTextBox.Text = Metrics.MacKeib(Convert.ToInt32(numberOfKnotsTextBox.Text),
-                Convert.ToInt32(numberOfEdgesTextBox.Text),
+            macKeibOutTextBox.Text = Metrics.MacKeib(Convert.ToInt32(numberOfEdgesTextBox.Text),
+                Convert.ToInt32(numberOfKnotsTextBox.Text),
                 Convert.ToInt32(numberOfConnectednessTextBox.Text)).ToString();
             GilbOutTextBox.Text = Metrics.Gilb(Convert.ToDouble(numberOfOperatorsTextBox.Text),
                 Convert.ToDouble(numberOfIFELSETextBox.Text)).ToString();

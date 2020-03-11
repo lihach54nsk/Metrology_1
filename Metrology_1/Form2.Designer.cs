@@ -135,7 +135,7 @@
             this.numberOfEdgesTextBox.Name = "numberOfEdgesTextBox";
             this.numberOfEdgesTextBox.Size = new System.Drawing.Size(100, 20);
             this.numberOfEdgesTextBox.TabIndex = 6;
-            this.numberOfEdgesTextBox.Text = "31";
+            this.numberOfEdgesTextBox.Text = "35";
             // 
             // numberOfKnotsTextBox
             // 
@@ -143,7 +143,7 @@
             this.numberOfKnotsTextBox.Name = "numberOfKnotsTextBox";
             this.numberOfKnotsTextBox.Size = new System.Drawing.Size(100, 20);
             this.numberOfKnotsTextBox.TabIndex = 7;
-            this.numberOfKnotsTextBox.Text = "35";
+            this.numberOfKnotsTextBox.Text = "31";
             // 
             // macKeibButton
             // 
