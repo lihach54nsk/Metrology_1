@@ -40,7 +40,7 @@ namespace Metrology_1
 
         public static double HabrMills(int m, int n, int M)
         {
-            double N = Math.Round(((double)n * M) / m); // всего ошибок в коде
+            double N = ((double)n * M) / m; // всего ошибок в коде
 
             if (n > N) return 1;
             return ((double)M / (M + N + 1));
